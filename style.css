@@ -3,9 +3,10 @@
   --main-red: #be3144;
   --main-blue: #45567d;
   --main-gray: #303841;
+  --main-green: #639205;
 }
 
-* {
+*{
   margin: 0;
   padding: 0;
 }
@@ -45,20 +46,15 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 1.8rem;
-  font-weight: 400;
   line-height: 1.4;
   color: var(--main-white);
 }
 
-h1,
-h2 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  text-align: center;
-}
-
 h1 {
+  font-family: sans-serif;
   font-size: 6rem;
+  text-align: center;
+  color: var(--main-gray);
 }
 
 h2 {
@@ -78,11 +74,11 @@ a {
 
 .nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
   background: var(--main-blue);
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 3px 4px 4px rgba(23, 14, 53, 0.4);
 }
 
 .nav-list {
@@ -107,42 +103,34 @@ a {
 }
 
 .nav-list a:hover {
-  background: var(--main-blue);
+  background: var(--main-red);
 }
 
-.welcome-section {
+.hero_section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100vh;
-  background-color: #3a3d40;
-  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  width: 80%;
+  margin: auto;
 }
 
-.welcome-section > p {
-  font-size: 3rem;
+.hero_section p {
+  font-size: 2rem;
   font-weight: bold;
   font-style: italic;
-  color: var(--main-red);
-}
-
-.self{
-  width: 40%;
-  margin: auto;
   text-align: center;
+  color: var(--main-green);
 }
 
-.self img{
+.hero_img{
   height: auto;
-  width: 100%;
+  width: 70%;
+  margin: auto;
   border-radius: 50%;
-  margin-left: auto;
-  margin-right: auto;
   display: block;
-  padding: 20px;
 }
+
 /* Projects section */
 
 .projects-section {
@@ -304,6 +292,7 @@ main > p{
 }
 
 /* Set a style for the buttons */
+
 #login_btn {
   background-color: var(--main-red);
   color: white;
@@ -382,15 +371,17 @@ span.signup{
 /* Registration page */
 
 #register{
-  padding: 1rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.4rem;
-  background: var(--main-red);
+  grid-template-columns: 2fr 3fr;
+  gap: .583rem;
+  width: 50%;
+  color: var(--main-gray);
+  margin: auto;
 }
 
 #register label{
   font-size: small;
+  display: block;
 }
 
 #register input, #register select, #register button{
@@ -399,8 +390,8 @@ span.signup{
 }
 
 #register button{
-  background: var(--main-white);
-  grid-area: 3/5/4/6;
+  background: var(--main-blue);
+  color: var(--main-white);
   border: none;
   padding: 1.4rem 2.4rem;
 }
@@ -431,4 +422,3 @@ span.signup{
   font-size: 16px;
   resize: none;
 }
-
